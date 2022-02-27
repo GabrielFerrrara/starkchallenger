@@ -36,6 +36,16 @@ gem "bootsnap", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem "rack-cors"
 
+gem('starkbank', '~> 2.6.0')
+
+gem 'faker'
+
+gem 'cpf_faker'
+
+gem 'whenever', require: false
+
+gem 'pry-byebug'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
