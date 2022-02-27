@@ -12,6 +12,7 @@ class InvoiceController < ApplicationController
   end
 
   def hook
+    Rails.logger.info "Recebido hook tipo: #{params[:event][:log][:type]}"
     if params[:event][:log][:type] == 'credited'
       transfers = StarkBank::Transfer.create(
         [
