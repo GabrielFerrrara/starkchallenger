@@ -22,4 +22,4 @@
 
 every 3.hours do
     rake "invoice:create"
- end
+end
